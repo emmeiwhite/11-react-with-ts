@@ -1,11 +1,8 @@
-function Component(): JSX.Element | null | string {
-  return null
-
-  return 'error'
-
+function Component({ name, id }: { name: string; id: number }) {
   return (
     <div>
-      <h1>React with TypeScript up & running!!</h1>
+      <h1>Name: {name}</h1>
+      <h1>Id: {id}</h1>
     </div>
   )
 }

@@ -3,7 +3,10 @@ import Component from './starter/01-return'
 function App() {
   return (
     <main>
-      <Component />
+      <Component
+        name="John"
+        id={123}
+      />
     </main>
   )
 }
