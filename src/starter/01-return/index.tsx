@@ -1,9 +1,8 @@
 function Component() {
   return (
     <div>
-      <h2>React & Typescript</h2>
-      <h2>Return Type</h2>
+      <h1>React with TypeScript up & running!!</h1>
     </div>
-  );
+  )
 }
-export default Component;
+export default Component
