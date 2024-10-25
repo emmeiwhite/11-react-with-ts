@@ -8,7 +8,10 @@ function App() {
         id={123}
       />
 
-      <Component>
+      <Component
+        name="Billi"
+        id={234}
+      >
         <h4>This goes in the children prop</h4>
       </Component>
     </main>

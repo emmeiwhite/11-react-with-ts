@@ -24,7 +24,11 @@ function Component({ name, id }: ComponentProps) {
 export default Component
 --- */
 
-type ComponentProps = { name: string; id: number; children: React.ReactNode }
+type ComponentProps = {
+  name: string
+  id: number
+  children?: React.ReactNode
+}
 
 function Component({ name, id, children }: ComponentProps) {
   return (
