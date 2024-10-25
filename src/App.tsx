@@ -7,6 +7,10 @@ function App() {
         name="John"
         id={123}
       />
+
+      <Component>
+        <h4>This goes in the children prop</h4>
+      </Component>
     </main>
   )
 }

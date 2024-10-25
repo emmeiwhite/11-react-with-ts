@@ -24,13 +24,14 @@ function Component({ name, id }: ComponentProps) {
 export default Component
 --- */
 
-type ComponentProps = { name: string; id: number }
+type ComponentProps = { name: string; id: number; children: React.ReactNode }
 
-function Component(props: ComponentProps) {
+function Component({ name, id, children }: ComponentProps) {
   return (
     <div>
-      <h1>Name: {props.name}</h1>
-      <h1>Id: {props.id}</h1>
+      <h1>Name: {name}</h1>
+      <h1>Id: {id}</h1>
+      {children}
     </div>
   )
 }
