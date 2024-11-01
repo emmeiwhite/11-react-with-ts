@@ -4,9 +4,11 @@ function App() {
   return (
     <main>
       <Component
-        name="Deep Work"
-        id={34}
-      />
+        name="Lion"
+        color="brownish yellow"
+      >
+        <p style={{ fontSize: '2rem' }}>Lion is called the King of Jungle!</p>
+      </Component>
     </main>
   )
 }
