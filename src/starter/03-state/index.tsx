@@ -58,7 +58,7 @@ function LifeChores() {
           setList([
             ...list,
             {
-              id: new Date().toTimeString(),
+              id: 34,
               name: 'Mango',
               price: 0.8,
               inStock: true
