@@ -9,7 +9,7 @@ type HouseProps = PropsWithChildren<{
 function House(props: HouseProps) {
   const { houseType, housePrice, houseAddress, children } = props
   return (
-    <div className="align-center">
+    <div className="text-center">
       <h1>House details</h1>
       <div>
         <p>Type of House: {houseType}</p>
