@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 // import { type PropsWithChildren } from 'react'
 
-// type Item = {
-//   id: number
-//   name: string
-//   price: number
-//   inStock: boolean
-// }
+type Item = {
+  id: number
+  name: string
+  price: number
+  inStock: boolean
+}
 
 const items = [
   {
@@ -27,8 +27,8 @@ const items = [
   {
     id: 3,
     name: 'Orange',
-    price: 0.7,
-    inStock: false
+    price: 0.7
+    // inStock: false
   }
 ]
 
@@ -37,7 +37,7 @@ const items = [
 function LifeChores() {
   const [completed, setCompleted] = useState(false)
   const [totalKgs, setTotalKgs] = useState(3.5)
-  const [list, setList] = useState(items)
+  const [list, setList] = useState<Item[]>(items)
   return (
     <div>
       <h2>React & Typescript</h2>
