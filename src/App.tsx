@@ -1,11 +1,11 @@
-import Book from './starter/01-return'
+import Component from './starter/01-return'
 
 function App() {
   return (
     <main>
-      <Book
-        title="Deep Work"
-        price={34}
+      <Component
+        name="Deep Work"
+        id={34}
       />
     </main>
   )
