@@ -15,6 +15,7 @@ function House(props: HouseProps) {
         <p>Type of House: {houseType}</p>
         <p>Price of House: {housePrice}</p>
         <p>Address: {houseAddress}</p>
+        {children}
       </div>
     </div>
   )
