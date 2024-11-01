@@ -27,8 +27,8 @@ const items = [
   {
     id: 3,
     name: 'Orange',
-    price: 0.7
-    // inStock: false
+    price: 0.7,
+    inStock: false
   }
 ]
 
@@ -38,6 +38,11 @@ function LifeChores() {
   const [completed, setCompleted] = useState(false)
   const [totalKgs, setTotalKgs] = useState(3.5)
   const [list, setList] = useState<Item[]>(items)
+
+  function handleSetters() {
+    setCompleted(true)
+    setTotalKgs(7)
+  }
   return (
     <div>
       <h2>React & Typescript</h2>
@@ -68,6 +73,11 @@ function LifeChores() {
       >
         Explore
       </button>
+
+      <button
+        className="btn btn-center"
+        onClick={handleSetters}
+      ></button>
     </div>
   )
 }
