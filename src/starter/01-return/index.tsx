@@ -4,7 +4,13 @@ export default function Component(): null | JSX.Element {
   return <p>I am a component</p>
 }
 --- */
+// Let's use type alias to save many many lines of code
 
+type Person = {
+  name: string
+  id: number
+}
+/* ---
 export default function Component({ name, id }: { name: string; id: number }) {
   console.log(name, id)
   return (
@@ -14,3 +20,6 @@ export default function Component({ name, id }: { name: string; id: number }) {
     </>
   )
 }
+--- */
+
+// We can also use props directly
