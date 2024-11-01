@@ -23,3 +23,14 @@ export default function Component({ name, id }: { name: string; id: number }) {
 --- */
 
 // We can also use props directly
+
+export default function Component(props: Person) {
+  console.log(props.name, props.id)
+  return (
+    <>
+      <h2>Name: {props.name}</h2>
+      <p>React with TypeScript is awesome!</p>
+      <p>Just need to pay attention</p>
+    </>
+  )
+}
