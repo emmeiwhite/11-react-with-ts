@@ -1,19 +1,12 @@
-import Component from './starter/01-return'
+import Book from './starter/01-return'
 
 function App() {
   return (
     <main>
-      <Component
-        name="John"
-        id={123}
+      <Book
+        title="Deep Work"
+        price={34}
       />
-
-      <Component
-        name="Billi"
-        id={234}
-      >
-        <h4>This goes in the children prop</h4>
-      </Component>
     </main>
   )
 }
